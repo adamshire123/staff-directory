@@ -8,7 +8,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-307-2771',
       email:'brewerm@email.arizona.edu',
-      photo:'images/brewerm.jpg'
+      photo:'brewerm.jpg'
     },
       {
       firstName:'Cheryl',
@@ -18,7 +18,9 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-310-9874',
       email:'ccuillie@email.arizona.edu',
-      photo:'images/cuillierc.jpg'},
+      photo:'cuillierc.jpg'
+        
+      },
        {
       firstName:'Jason',
       lastName:'Dewland',
@@ -27,7 +29,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-447-8097',
       email:'jasondewland@email.arizona.edu',
-      photo:'images/dewlandj.jpg'
+      photo:'dewlandj.jpg'
       },
        {
       firstName:'Mary',
@@ -37,7 +39,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-307-2615',
       email:'mfeeney@email.arizona.edu',
-      photo:'images/mfeeney.jpg'
+      photo:'mfeeney.jpg'
     }
     ];
   
