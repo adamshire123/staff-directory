@@ -12,7 +12,7 @@
   <div class="container">
    <div ng-repeat="x in staff | filter : search | orderBy:'lastName' ">
       <div class="staff-card">
-        <img class="staff-card__image" src="images/{{ x.photo }}">
+        <img class="staff-card__image" ng-src="images/{{ x.photo }}" alt="photo of {{x.firstName}} {{x.lastName}}" />
         <div class="staff-card__info">
             <div class="staff-card__bio">
                 <p class="staff-card__name">{{ x.firstName }} {{ x.lastName }}</p>
