@@ -1,0 +1,25 @@
+.container {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  
+}
+
+.staff-card {
+  background-color:#eee;
+  width:320px;
+  
+  margin:10px auto;
+  
+  
+  
+}
+.staff-card__image {
+  display:block; margin:auto; width:100%;
+}
+.staff-card__info{padding:10px}
+.staff-card__bio {text-align:center}
+.staff-card__name {font-size:24px;
+  color:red;
+  margin:auto;
+}

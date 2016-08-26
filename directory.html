@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/directory.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    </head>
+    <body>
+<div ng-app="directory" ng-controller="searchCtrl"> 
+  search: <input ng-model="query">
+  <div class="container">
+   <div ng-repeat="x in staff | filter : search | orderBy:'lastName' ">
+      <div class="staff-card">
+        <img class="staff-card__image" src="{{x.photo}}">
+        <div class="staff-card__info">
+            <div class="staff-card__bio">
+                <p class="staff-card__name">{{ x.firstName }} {{ x.lastName }}</p>
+                <p class="staff-card__title">{{ x.title }}</p>
+         
+          </div>
+                <ul class="staff-card__contact-info-list">
+                    <li class="staff-card__contact-info-item">Office: {{x.office}}</li>
+                    <li class="staff-card__contact-info-item">Department: {{x.department}}</li>
+                    <li class="staff-card__contact-info-item">Phone: {{x.phone}}</li>
+                    <li class="staff-card__contact-info-item">Email: <a href="mailto://{{x.email}}">{{x.email}}</a></li>
+                </ul>
+            
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+<script src="js/directory.js"></script>
+    </body>
+</html>
