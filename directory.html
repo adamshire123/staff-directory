@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+     
         
-        <title> </title>
-        <link rel="stylesheet" type="text/css" href="stylesheets/directory.css">
+        <title>Staff Directory | University of Arizona Libraries </title>
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/directory.css">
     </head>
     <body>
-<div ng-app="directory" ng-controller="searchCtrl"> 
-  search: <input ng-model="query">
+<div ng-app="directory" ng-controller="searchCtrl" class="ng-cloak"> 
+  <label for="staff-search">Search for our Staff:</label> <input id="staff-search" ng-model="query">
   <div class="container">
-   <div ng-repeat="x in staff | filter : search | orderBy:'lastName' ">
+   <div ng-repeat="x in staff | filter : search | orderBy:'lastName' " class="ng-cloak">
       <div class="staff-card">
-        <img class="staff-card__image" ng-src="images/{{ x.photo }}" alt="photo of {{x.firstName}} {{x.lastName}}" />
+        <img class="staff-card__image" ng-src="images/{{ x.photo }}"  alt="photo of {{x.firstName}} {{x.lastName}}" />
         <div class="staff-card__info">
             <div class="staff-card__bio">
-                <p class="staff-card__name">{{ x.firstName }} {{ x.lastName }}</p>
-                <p class="staff-card__title">{{ x.title }}</p>
+                <p class="staff-card__name"  >{{ x.firstName }} {{ x.lastName }}</p>
+                <p class="staff-card__title"  >{{ x.title }}</p>
          
           </div>
                 <ul class="staff-card__contact-info-list">
-                    <li class="staff-card__contact-info-item">Office: {{x.office}}</li>
-                    <li class="staff-card__contact-info-item">Department: {{x.department}}</li>
-                    <li class="staff-card__contact-info-item">Phone: {{x.phone}}</li>
-                    <li class="staff-card__contact-info-item">Email: <a href="mailto://{{x.email}}">{{x.email}}</a></li>
+                    <li class="staff-card__contact-info-item" >Office: {{x.office}}</li>
+                    <li class="staff-card__contact-info-item" >Department: {{x.department}}</li>
+                    <li class="staff-card__contact-info-item" >Phone: {{x.phone}}</li>
+                    <li class="staff-card__contact-info-item" >Email: <a href="mailto://{{x.email}}">{{x.email}}</a></li>
                 </ul>
             
         </div>

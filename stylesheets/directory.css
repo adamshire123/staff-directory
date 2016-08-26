@@ -1,3 +1,14 @@
+/*
+UA Red: #AB0520
+UA Light Brick: #E6E3D9
+Dark Grey for Content: #535252
+*/
+
+body {
+  font-family: sans-serif;
+  color: #535252;
+}
+
 .container {
   display:flex;
   flex-direction:column;
@@ -7,19 +18,54 @@
 
 .staff-card {
   background-color:#eee;
-  width:320px;
-  
+  width:250px;
   margin:10px auto;
   
   
   
 }
 .staff-card__image {
-  display:block; margin:auto; width:100%;
+  margin:auto; width:100%;
 }
 .staff-card__info{padding:10px}
-.staff-card__bio {text-align:center}
+.staff-card__bio {text-align:left; font-family: 'Roboto Condensed', sans-serif;}
 .staff-card__name {font-size:24px;
-  color:red;
-  margin:auto;
+  color:#AB0520;
+  margin:0;
+}
+.staff-card__title {
+  margin:0;
+}
+.staff-card__contact-info-list {
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 1.5;
+  padding:0;
+}
+
+@media screen and (min-width: 480px) {
+  .staff-card{
+    position: relative;
+    width:400px;
+  
+    
+  }
+
+  .staff-card__image {
+  display:block;
+  width:150px;
+  margin:0;
+  
+  
+ 
+  }
+  .staff-card__info{
+ 
+  position:absolute;
+  left:150px;
+  top:0;
+  
+  
+  }
+  
 }
