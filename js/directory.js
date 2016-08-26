@@ -8,7 +8,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-307-2771',
       email:'brewerm@email.arizona.edu',
-      photo:'https://adamshire123.github.io/staff-directory/images/brewerm.jpg'
+      photo:'images/brewerm.jpg'
     },
       {
       firstName:'Cheryl',
@@ -18,7 +18,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-310-9874',
       email:'ccuillie@email.arizona.edu',
-      photo:'https://adamshire123.github.io/staff-directory/images/cuillierc.jpg'},
+      photo:'images/cuillierc.jpg'},
        {
       firstName:'Jason',
       lastName:'Dewland',
@@ -27,7 +27,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-447-8097',
       email:'jasondewland@email.arizona.edu',
-      photo:'https://adamshire123.github.io/staff-directory/images/dewlandj.jpg'
+      photo:'images/dewlandj.jpg'
       },
        {
       firstName:'Mary',
@@ -37,7 +37,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
       department:'Research and Learning (R&L)',
       phone:'520-307-2615',
       email:'mfeeney@email.arizona.edu',
-      photo:'https://adamshire123.github.io/staff-directory/images/mfeeney.jpg'
+      photo:'images/mfeeney.jpg'
     }
     ];
   
