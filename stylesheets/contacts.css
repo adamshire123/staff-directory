@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width: 480px) {
+.container {
+    flex-flow:row wrap;
+    justify-content:space-around;
+    
+}
+.staff-card{
+  flex-basis:calc(50% - 20px);
+  flex-grow:0;
+  flex-shrink:0;
+  margin:10px;
+  min-width: 400px;
+  
+  
+
+}
+
+}
