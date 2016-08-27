@@ -6,7 +6,7 @@ Dark Grey for Content: #535252
 
 body {
   font-family: sans-serif;
-  color: #535252;
+  
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 }
 
 .staff-card {
-  background-color:#eee;
+  background-color:#e8e4d9;
   width:250px;
   margin:10px auto;
   
