@@ -52,7 +52,7 @@ var app = angular.module('directory', []).controller('searchCtrl', function($sco
   	// Only search certain properties
     $scope.search = function (row) {
         return (
-          angular.lowercase(row.firstName).indexOf($scope.query || '') === 0 || 
+          angular.lowercase(row.firstName +" "+ row.lastName).indexOf($scope.query || '') === 0 || 
           angular.lowercase(row.lastName).indexOf($scope.query || '') === 0);
     };
   

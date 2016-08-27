@@ -14,7 +14,8 @@
 <div ng-app="directory" ng-controller="searchCtrl" class="ng-cloak"> 
   <label for="staff-search">Search for our Staff:</label> <input id="staff-search" ng-model="query">
   <div class="container">
-   <div ng-repeat="x in staff | filter : search | orderBy:'lastName' " class="ng-cloak">
+   <div ng-repeat="x in filteredStaff = (staff | filter : search | orderBy:'lastName') " class="ng-cloak">
+      
       <div class="staff-card">
         <img class="staff-card__image" ng-src="images/{{ x.photo }}"  alt="photo of {{x.firstName}} {{x.lastName}}" />
         <div class="staff-card__info">
@@ -34,6 +35,8 @@
     </div>
   </div>
   </div>
+  <div ng-if="filteredStaff.length == 0"><p>We couldn't find anyone by that name in our directory, but here's a puppy.</p> <img src="http://cuteimages.net/data/2015/5/fluffy-puppy-pictures-cuteimages.net.jpg" style="width:50%"/></div>
+  
 </div>
 <script src="js/directory.js"></script>
     </body>
